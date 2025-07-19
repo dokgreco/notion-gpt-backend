@@ -13,7 +13,7 @@ assistant_id = os.getenv("GPT_AGENT_ID")
 @app.get("/chatbot")
 def chatbot(query: str):
 
-    db_id = "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"
+    db_id = "2074045133b180acaa6af740441d49be"
 
     notion_data = notion.databases.query(database_id=db_id)
     
