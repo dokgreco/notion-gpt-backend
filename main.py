@@ -19,7 +19,7 @@ def chatbot(query: str):
     
     extracted_info = ""
     for result in notion_data["results"]:
-        title = result["properties"]["Name"]["title"]
+        title = result["properties"]["Project Vertical"]["title"]
         if title:
             extracted_info += title[0]["text"]["content"] + "\n"
     
