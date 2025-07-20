@@ -6,6 +6,17 @@ import time
 
 app = FastAPI()
 
+from fastapi.middleware.cors import CORSMiddleware
+
+# Abilita chiaramente CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # permette richieste da qualsiasi origine
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 openai.api_key = os.getenv("OPENAI_API_KEY")
 notion = Client(auth=os.getenv("NOTION_API_KEY"))
 assistant_id = os.getenv("GPT_AGENT_ID")
