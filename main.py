@@ -10,12 +10,12 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 notion = Client(auth=os.getenv("NOTION_API_KEY"))
 assistant_id = os.getenv("GPT_AGENT_ID")
 
-# ID reali dei tuoi database Notion
+# ID corretti al 100% dei tuoi database Notion
 DATABASES = {
     "Project Vertical": "20740451-33b1-80ac-aa6a-f740441d49be",
-    "Case histories": "20740451-33b1-81c2-a78d-000c0ae6430f",
-    "Vertical Insight": "1f840451-33b1-80f3-975d-000c0e6c4578",
-    "Dataset benchmark": "18940451-33b1-81c2-9f46-000c6d09528b"
+    "Case histories": "1f540451-33b1-8058-982d-f358ff5346bf",
+    "Vertical Insight": "1f840451-33b1-80b9-9ce8-c3c58c303044",
+    "Dataset benchmark": "18940451-33b1-8014-a2e3-fd529221b974"
 }
 
 # Funzione per estrarre automaticamente dati da un DB Notion
