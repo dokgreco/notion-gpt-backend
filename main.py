@@ -12,10 +12,10 @@ assistant_id = os.getenv("GPT_AGENT_ID")
 
 # ID reali dei tuoi database Notion
 DATABASES = {
-    "Project Vertical": "2074045133b180acaa6af740441d49be",
-    "Case histories": "2074045133b181c2a78d000c0ae6430f",
-    "Vertical Insight": "1f84045133b180f3975d000c0e6c4578",
-    "Dataset benchmark": "1894045133b181c29f46000c6d09528b"
+    "Project Vertical": "20740451-33b1-80ac-aa6a-f740441d49be",
+    "Case histories": "20740451-33b1-81c2-a78d-000c0ae6430f",
+    "Vertical Insight": "1f840451-33b1-80f3-975d-000c0e6c4578",
+    "Dataset benchmark": "18940451-33b1-81c2-9f46-000c6d09528b"
 }
 
 # Funzione per estrarre automaticamente dati da un DB Notion
